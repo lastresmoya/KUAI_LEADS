@@ -18,8 +18,7 @@ import {
   Form,
   FormGroup,
   Label,
-  Input,
-  FormText
+  Input
 } from 'reactstrap';
 import person from './Assets/person.png'
 import item1 from './Assets/item-1.png'
