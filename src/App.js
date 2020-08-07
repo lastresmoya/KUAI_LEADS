@@ -196,7 +196,7 @@ function App() {
               <a href="https://www.linkedin.com/company/pengyilabs/" rel="noopener noreferrer" target="_blank">
                 <img className="pr-3" width="5%" src={social2} alt="social icon"/>
               </a>
-              <a href="https://www.linkedin.com/company/pengyilabs/" rel="noopener noreferrer" target="_blank">
+              <a href="https://twitter.com/labspengyi" rel="noopener noreferrer" target="_blank">
                 <img className="pr-3" width="5%" src={social1} alt="social icon"/>
               </a>
             </div>
