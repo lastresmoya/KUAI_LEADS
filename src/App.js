@@ -138,11 +138,11 @@ function App() {
           <h2 className="text-center purple py-5">Nuestro Producto</h2>
           <Row>
             <Col sm="12" lg="6">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/muTv3PBoLQQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe title="KUAI Como lo experimenta un administrador" width="560" height="315" src="https://www.youtube.com/embed/muTv3PBoLQQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <p className="purple pt-4">KUAI Como lo experimenta un administrador</p>
             </Col>
             <Col sm="12" lg="6">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/yC-EoCZqPUA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe title="KUAI Como lo experimenta un cliente" width="560" height="315" src="https://www.youtube.com/embed/yC-EoCZqPUA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <p className="purple pt-4">KUAI Como lo experimenta un cliente</p>
             </Col>
           </Row>
