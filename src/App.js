@@ -24,6 +24,11 @@ import person from './Assets/person.png'
 import item1 from './Assets/item-1.png'
 import item2 from './Assets/item-2.png'
 import item3 from './Assets/item-3.png'
+import social1 from './Assets/social-1.png'
+import social2 from './Assets/social-2.png'
+import social3 from './Assets/social-3.png'
+import social4 from './Assets/social-4.png'
+import social5 from './Assets/social-5.png'
 import './App.css';
 import emailjs from 'emailjs-com';
 
@@ -63,7 +68,7 @@ function App() {
                 <NavLink className="text-white" href="#product">Nuestro Producto</NavLink>
               </NavItem>
               <NavItem className="mr-4">
-                <NavLink href="#registro" className="btn btn-primary text-white rounded-pill px-4" color="primary">Pre registro</NavLink>
+                <NavLink href="#registro" className="btn btn-primary principal text-white rounded-pill px-4" color="primary">Pre registro</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
@@ -73,7 +78,7 @@ function App() {
             <h1 className="text-left text-white font-weight-bold title pt-5 mt-5">KUAI es una plataforma adonde puedes gestionar</h1>
             <p className="text-left text-white font-weight-bold">todos los pedidos de tu restaurante de manera flexible y centralizada.</p>
             <div className="text-left">
-              <Button className="rounded-pill mt-3 px-4 btn-lg" color="primary">Pre regÍstrate ahora</Button>
+              <a href="#registro" className="btn btn-primary text-white rounded-pill principal px-4 btn-lg" color="primary">Pre regÍstrate ahora</a>
             </div>
           </Col>
           <Col>
@@ -169,12 +174,34 @@ function App() {
                   <Label className="text-left d-block" for="inputEmail">Email</Label>
                   <Input required type="email" name="email" id="inputEmail" placeholder="Email" />
                 </FormGroup>
-                <Button type="submit" className="rounded-pill px-4" color="primary">Enviar</Button>
+                <Button type="submit" className="rounded-pill principal btn-lg px-4" color="primary">Enviar</Button>
               </Form>
             </Col>
           </Row>
         </Container>
       </section>
+      <footer className="pb-4 bg-light">
+        <Container>
+          <p className="pt-5">POWERED BY PENGYI LABS</p>
+            <div>
+              <a href="https://www.facebook.com/PengYiLabs/" rel="noopener noreferrer" target="_blank">
+                <img className="pr-3" width="5%" src={social3} alt="social icon"/>
+              </a>
+              <a href="https://www.instagram.com/pengyilabs/" rel="noopener noreferrer" target="_blank">
+                <img className="pr-3" width="5%" src={social4} alt="social icon"/>
+              </a>
+              <a href="https://pengyilabs.io/#/welcome" rel="noopener noreferrer" target="_blank">
+                <img className="pr-3" width="5%" src={social5} alt="social icon"/>
+              </a>
+              <a href="https://www.linkedin.com/company/pengyilabs/" rel="noopener noreferrer" target="_blank">
+                <img className="pr-3" width="5%" src={social2} alt="social icon"/>
+              </a>
+              <a href="https://www.linkedin.com/company/pengyilabs/" rel="noopener noreferrer" target="_blank">
+                <img className="pr-3" width="5%" src={social1} alt="social icon"/>
+              </a>
+            </div>
+        </Container>
+      </footer>
     </div>
   );
 }
