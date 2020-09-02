@@ -65,7 +65,7 @@ function App() {
                 <NavLink className="text-white" href="#benefit">Beneficios</NavLink>
               </NavItem>
               <NavItem className="mr-4">
-                <NavLink className="text-white" href="#product">Nuestro Producto</NavLink>
+                <NavLink className="text-white" href="#product">Nuestra Platafoma</NavLink>
               </NavItem>
               <NavItem className="mr-4">
                 <NavLink href="#registro" className="btn btn-primary principal text-white rounded-pill px-4" color="primary">Pre registro</NavLink>
@@ -75,51 +75,51 @@ function App() {
         </Navbar>
         <Row>
           <Col>
-            <h1 className="text-left text-white font-weight-bold title pt-5 mt-5">KUAI es una plataforma adonde puedes gestionar</h1>
-            <p className="text-left text-white font-weight-bold">todos los pedidos de tu restaurante de manera flexible y centralizada.</p>
+            <h1 className="text-left text-white font-weight-bold title pt-5 mt-5">KUAI es un sistema para servicios de comida adonde puedes</h1>
+            <p className="text-left text-white font-weight-bold">gestionar todos los pedidos de manera flexible, según tus reglas, bajo tu control y de manera centralizada.</p>
             <div className="text-left">
-              <a href="#registro" className="btn btn-primary text-white rounded-pill principal px-4 btn-lg" color="primary">Pre regÍstrate ahora</a>
+              <a href="#registro" className="btn btn-primary text-white rounded-pill principal px-4 btn-lg" color="primary">Pre regístrate ahora</a>
             </div>
           </Col>
           <Col>
-            <img src={person} alt="personaje"/>
+            <img src={person} alt="Como vender en uber eats costa rica" />
           </Col>
         </Row>
       </Container>
       </header>
       <section id="benefit" className="pb-5">
         <Container>
-          <h2 className="text-center purple py-5">Los beneficios</h2>
+          <h2 className="text-center purple py-5">Como vender comida por internet</h2>
           <Row>
             <Col sm="12" lg="4">
               <Card className="border-0">
-                <img width="50%" className="mx-auto" src={item1} alt="beneficio" />
+                <img width="50%" className="mx-auto" src={item1} alt="Vender comida por internet" />
                 <CardBody>
-                  <CardTitle className="font-weight-bold purple">Gestiónalo todo de manera independiente</CardTitle>
+                  <CardTitle className="font-weight-bold purple">Tu negocio bajo tu control</CardTitle>
                   <CardText className="text-secondary">
-                    registra tu restaurante, personalízalo a tu gusto, gestiona el menú y los métodos de pago y entrega, sin necesidad de ponerte en contacto con nosotros y dependiendo únicamente de ti mismo.
+                    registra tu restaurante, personalíza su perfil, gestiona su menú y los métodos de pago y entrega. Todo sin necesidad de ponerte en contacto con nosotros.
                   </CardText>
                 </CardBody>
               </Card>
             </Col>
             <Col sm="12" lg="4">
               <Card className="border-0">
-                <img width="50%" className="mx-auto" src={item2} alt="beneficio" />
+                <img width="50%" className="mx-auto" src={item2} alt="Sistema para restaurantes" />
                 <CardBody>
-                  <CardTitle className="font-weight-bold purple">Obtén un enlace y un código QR únicos para tu restaurante</CardTitle>
+                  <CardTitle className="font-weight-bold purple">Obtén un enlace y código QR únicos</CardTitle>
                   <CardText className="text-secondary">
-                    y compártelos por WhatsApp, Facebook, Instagram y otras redes sociales.
+                    para que los uses por WhatsApp, Facebook, Instagram y etc. para dirigir a tus clientes a tu menú digital para que hagan pedidos según tus reglas.
                   </CardText>
                 </CardBody>
               </Card>
             </Col>
             <Col sm="12" lg="4">
               <Card className="border-0">
-                <img width="50%" className="mx-auto" src={item3} alt="beneficio" />
+                <img width="50%" className="mx-auto" src={item3} alt="Enviar comida a domicilio regalo" />
                 <CardBody>
-                  <CardTitle className="font-weight-bold purple">Prueba nuestra plataforma de manera gratuita</CardTitle>
+                  <CardTitle className="font-weight-bold purple">Prueba gratis KUAI por un mes</CardTitle>
                   <CardText className="text-secondary">
-                    por 50 ordenes o durante un mes desde que recibes tu primera orden.
+                    vender comida por internet no tiene que estar sujeto al uso de costosas plataformas de delivery, nosotros te dejamos probar nuestro sistema gratis durante 30 días.
                   </CardText>
                 </CardBody>
               </Card>
@@ -131,23 +131,23 @@ function App() {
         <Container>
           <Row>
             <Col>
-              <h1 className="text-center purple">Recibe pedidos de manera automática para</h1>
-              <p className="text-center purple">exprés, pick up, entrega en parqueo, servicio de habitación y en restaurante a través de la plataforma y gestiónalos todos desde tu celular o computadora, sin necesidad de instalar ninguna app.</p>
+              <h1 className="text-center purple">KUAI funciona como las aplicaciones para pedir comida</h1>
+              <p className="text-center purple">pero sin necesidad de que administradores o clientes tengan que instalar aplicaciones en sus dispositivos. El sistema además permite gestionar entrega en mostrador, entrega en parqueo, servicio de habitación y servicio en restaurante, todos mediante un menú digital sin contacto desde celular, tablet ó computadora.</p>
             </Col>
           </Row>
         </Container>
       </section>
       <section id="product" className="pb-5">
         <Container>
-          <h2 className="text-center purple py-5">Nuestro Producto</h2>
+          <h2 className="text-center purple py-5">Experimenta nuestro sistema para la gestión de tu negocio</h2>
           <Row>
             <Col sm="12" lg="6">
               <iframe title="KUAI Como lo experimenta un administrador" width="560" height="315" src="https://www.youtube.com/embed/muTv3PBoLQQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <p className="purple pt-4">KUAI Como lo experimenta un administrador</p>
+              <p className="purple pt-4">Tu restaurante y sistema de gestión desde la perspectiva de un administrador</p>
             </Col>
             <Col sm="12" lg="6">
               <iframe title="KUAI Como lo experimenta un cliente" width="560" height="315" src="https://www.youtube.com/embed/yC-EoCZqPUA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <p className="purple pt-4">KUAI Como lo experimenta un cliente</p>
+              <p className="purple pt-4">Tu restaurante y menú digital para vender comida por internet desde la perspectiva de un cliente</p>
             </Col>
           </Row>
         </Container>
@@ -185,19 +185,19 @@ function App() {
           <p className="pt-5">POWERED BY PENGYI LABS</p>
             <div>
               <a href="https://www.facebook.com/PengYiLabs/" rel="noopener noreferrer" target="_blank">
-                <img className="pr-3" width="5%" src={social3} alt="social icon"/>
+                <img className="pr-3" width="5%" src={social3} alt="Facebook Icon" />
               </a>
               <a href="https://www.instagram.com/pengyilabs/" rel="noopener noreferrer" target="_blank">
-                <img className="pr-3" width="5%" src={social4} alt="social icon"/>
+                <img className="pr-3" width="5%" src={social4} alt="Instagram Icon" />
               </a>
-              <a href="https://pengyilabs.io/#/welcome" rel="noopener noreferrer" target="_blank">
-                <img className="pr-3" width="5%" src={social5} alt="social icon"/>
+              <a href="https://pengyilabs.io" rel="noopener noreferrer" target="_blank">
+                <img className="pr-3" width="5%" src={social5} alt="Pengyi Labs website" />
               </a>
               <a href="https://www.linkedin.com/company/pengyilabs/" rel="noopener noreferrer" target="_blank">
-                <img className="pr-3" width="5%" src={social2} alt="social icon"/>
+                <img className="pr-3" width="5%" src={social2} alt="Linkedin Icon" />
               </a>
               <a href="https://twitter.com/labspengyi" rel="noopener noreferrer" target="_blank">
-                <img className="pr-3" width="5%" src={social1} alt="social icon"/>
+                <img className="pr-3" width="5%" src={social1} alt="Twitter Icon" />
               </a>
             </div>
         </Container>
