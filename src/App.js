@@ -62,10 +62,10 @@ function App() {
                 <NavLink className="text-white" href="/">Inicio</NavLink>
               </NavItem>
               <NavItem className="mr-4">
-                <NavLink className="text-white" href="#benefit">Beneficios</NavLink>
+                <NavLink className="text-white" href="#Vender-comida-por-internet">Beneficios</NavLink>
               </NavItem>
               <NavItem className="mr-4">
-                <NavLink className="text-white" href="#product">Nuestra Platafoma</NavLink>
+                <NavLink className="text-white" href="#Sistema-de-pedidos-online">Nuestro Sistema</NavLink>
               </NavItem>
               <NavItem className="mr-4">
                 <NavLink href="#registro" className="btn btn-primary principal text-white rounded-pill px-4" color="primary">Pre registro</NavLink>
@@ -75,25 +75,25 @@ function App() {
         </Navbar>
         <Row>
           <Col>
-            <h1 className="text-left text-white font-weight-bold title pt-5 mt-5">KUAI es un sistema para servicios de comida adonde puedes</h1>
-            <p className="text-left text-white font-weight-bold">gestionar todos los pedidos de manera flexible, según tus reglas, bajo tu control y de manera centralizada.</p>
+            <h1 className="text-left text-white font-weight-bold title pt-5 mt-5">KUAI es un sistema de pedidos online para servicios de comida en el cual podrás</h1>
+            <p className="text-left text-white font-weight-bold">gestionarlos de manera flexible, según tus reglas, bajo tu control y de manera centralizada.</p>
             <div className="text-left">
               <a href="#registro" className="btn btn-primary text-white rounded-pill principal px-4 btn-lg" color="primary">Pre regístrate ahora</a>
             </div>
           </Col>
           <Col>
-            <img src={person} alt="Como vender en uber eats costa rica" />
+            <img src={person} alt="Vender comida por internet" />
           </Col>
         </Row>
       </Container>
       </header>
-      <section id="benefit" className="pb-5">
+      <section id="Vender-comida-por-internet" className="pb-5">
         <Container>
           <h2 className="text-center purple py-5">Como vender comida por internet</h2>
           <Row>
             <Col sm="12" lg="4">
               <Card className="border-0">
-                <img width="50%" className="mx-auto" src={item1} alt="Vender comida por internet" />
+                <img width="50%" className="mx-auto" src={item1} alt="Sistema de pedidos online" />
                 <CardBody>
                   <CardTitle className="font-weight-bold purple">Tu negocio bajo tu control</CardTitle>
                   <CardText className="text-secondary">
@@ -104,9 +104,9 @@ function App() {
             </Col>
             <Col sm="12" lg="4">
               <Card className="border-0">
-                <img width="50%" className="mx-auto" src={item2} alt="Sistema para restaurantes" />
+                <img width="50%" className="mx-auto" src={item2} alt="Genera un codigo QR" />
                 <CardBody>
-                  <CardTitle className="font-weight-bold purple">Obtén un enlace y código QR únicos</CardTitle>
+                  <CardTitle className="font-weight-bold purple">Obtén un enlace y genera un código QR únicos</CardTitle>
                   <CardText className="text-secondary">
                     para que los uses por WhatsApp, Facebook, Instagram y etc. para dirigir a tus clientes a tu menú digital para que hagan pedidos según tus reglas.
                   </CardText>
@@ -115,11 +115,11 @@ function App() {
             </Col>
             <Col sm="12" lg="4">
               <Card className="border-0">
-                <img width="50%" className="mx-auto" src={item3} alt="Enviar comida a domicilio regalo" />
+                <img width="50%" className="mx-auto" src={item3} alt="Prueba gratis por un mes" />
                 <CardBody>
                   <CardTitle className="font-weight-bold purple">Prueba gratis KUAI por un mes</CardTitle>
                   <CardText className="text-secondary">
-                    vender comida por internet no tiene que estar sujeto al uso de costosas plataformas de delivery, nosotros te dejamos probar nuestro sistema gratis durante 30 días.
+                    vender comida por internet no tiene que estar sujeto al uso de costosos sistemas de delivery, nosotros te dejamos probar nuestro sistema gratis durante 30 días.
                   </CardText>
                 </CardBody>
               </Card>
@@ -127,17 +127,17 @@ function App() {
           </Row>
         </Container>
       </section>
-      <section className="bg-1 py-5">
+      <section id="Sistema-de-pedidos-online" className="bg-1 py-5">
         <Container>
           <Row>
             <Col>
               <h1 className="text-center purple">KUAI funciona como las aplicaciones para pedir comida</h1>
-              <p className="text-center purple">pero sin necesidad de que administradores o clientes tengan que instalar aplicaciones en sus dispositivos. El sistema además permite gestionar entrega en mostrador, entrega en parqueo, servicio de habitación y servicio en restaurante, todos mediante un menú digital sin contacto desde celular, tablet ó computadora.</p>
+              <p className="text-center purple">pero sin necesidad de que administradores o clientes tengan que instalar aplicaciones en sus dispositivos. El sistema permite gestionar entrega en mostrador, entrega en parqueo, servicio de habitación y servicio en restaurante, todos mediante un menú digital sin contacto desde celular, tablet ó computadora.</p>
             </Col>
           </Row>
         </Container>
       </section>
-      <section id="product" className="pb-5">
+      <section className="pb-5">
         <Container>
           <h2 className="text-center purple py-5">Experimenta nuestro sistema para la gestión de tu negocio</h2>
           <Row>
