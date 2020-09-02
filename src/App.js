@@ -89,7 +89,7 @@ function App() {
       </header>
       <section id="vender-comida-por-internet" className="pb-5">
         <Container>
-          <h2 className="text-center purple py-5">Como vender comida por internet</h2>
+          <h2 className="text-center purple py-5">Cómo vender comida por internet</h2>
           <Row>
             <Col sm="12" lg="4">
               <Card className="border-0">
@@ -97,7 +97,7 @@ function App() {
                 <CardBody>
                   <CardTitle className="font-weight-bold purple">Tu negocio bajo tu control</CardTitle>
                   <CardText className="text-secondary">
-                    registra tu restaurante, personalíza su perfil, gestiona su menú y los métodos de pago y entrega. Todo sin necesidad de ponerte en contacto con nosotros.
+                    registra tu restaurante, personaliza su perfil, gestiona su menú y los métodos de pago y entrega. Todo sin necesidad de ponerte en contacto con nosotros.
                   </CardText>
                 </CardBody>
               </Card>
@@ -108,7 +108,7 @@ function App() {
                 <CardBody>
                   <CardTitle className="font-weight-bold purple">Obtén un enlace y genera un código QR únicos</CardTitle>
                   <CardText className="text-secondary">
-                    para que los uses por WhatsApp, Facebook, Instagram y etc. para dirigir a tus clientes a tu menú digital para que hagan pedidos según tus reglas.
+                    para que los uses por WhatsApp, Facebook, Instagram y etc. para dirigir a tus clientes a tu menú digital y que hagan pedidos según tus reglas.
                   </CardText>
                 </CardBody>
               </Card>
@@ -132,7 +132,7 @@ function App() {
           <Row>
             <Col>
               <h1 className="text-center purple">KUAI funciona como las aplicaciones para pedir comida</h1>
-              <p className="text-center purple">pero sin necesidad de instalar una app en tu dispositivo!. El sistema permite gestionar entrega en mostrador, entrega en parqueo, servicio de habitación y servicio en restaurante, todos mediante un menú digital sin contacto desde celular, tablet ó computadora.</p>
+              <p className="text-center purple">pero sin necesidad de instalar una app en tu dispositivo! El sistema permite gestionar entrega en mostrador, entrega en parqueo, servicio de habitación y servicio en restaurante, todos mediante un menú digital sin contacto desde celular, tablet ó computadora.</p>
             </Col>
           </Row>
         </Container>
