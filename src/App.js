@@ -117,7 +117,7 @@ function App() {
               <Card className="border-0">
                 <img width="50%" className="mx-auto" src={item3} alt="Prueba gratis por un mes" />
                 <CardBody>
-                  <CardTitle className="font-weight-bold purple">Prueba gratis KUAI por un mes</CardTitle>
+                  <CardTitle className="font-weight-bold purple pt-3">Prueba gratis KUAI por un mes</CardTitle>
                   <CardText className="text-secondary">
                     vender comida por internet no tiene que estar sujeto al uso de costosos sistemas de delivery, nosotros te dejamos probar nuestro sistema gratis durante 30 días.
                   </CardText>
@@ -142,11 +142,15 @@ function App() {
           <h2 className="text-center purple py-5">Experimenta nuestro sistema para la gestión de tu negocio</h2>
           <Row>
             <Col sm="12" lg="6">
-              <iframe title="KUAI Como lo experimenta un administrador" width="560" height="315" src="https://www.youtube.com/embed/muTv3PBoLQQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div className="iframe-container">
+                <iframe title="KUAI Como lo experimenta un administrador" className="responsive-iframe" src="https://www.youtube.com/embed/muTv3PBoLQQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
               <p className="purple pt-4">Tu restaurante y sistema de gestión desde la perspectiva de un administrador</p>
             </Col>
             <Col sm="12" lg="6">
-              <iframe title="KUAI Como lo experimenta un cliente" width="560" height="315" src="https://www.youtube.com/embed/yC-EoCZqPUA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div className="iframe-container">
+                <iframe title="KUAI Como lo experimenta un cliente" className="responsive-iframe" src="https://www.youtube.com/embed/yC-EoCZqPUA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
               <p className="purple pt-4">Tu restaurante y menú digital para vender comida por internet desde la perspectiva de un cliente</p>
             </Col>
           </Row>
@@ -185,19 +189,19 @@ function App() {
           <p className="pt-5">POWERED BY PENGYI LABS</p>
             <div>
               <a href="https://www.facebook.com/PengYiLabs/" rel="noopener noreferrer" target="_blank">
-                <img className="pr-3" width="5%" src={social3} alt="Facebook Icon" />
+                <img className="img-fluid pr-3" width="60px" src={social3} alt="Facebook Icon" />
               </a>
               <a href="https://www.instagram.com/pengyilabs/" rel="noopener noreferrer" target="_blank">
-                <img className="pr-3" width="5%" src={social4} alt="Instagram Icon" />
+                <img className="img-fluid pr-3" width="60px" src={social4} alt="Instagram Icon" />
               </a>
               <a href="https://pengyilabs.io" rel="noopener noreferrer" target="_blank">
-                <img className="pr-3" width="5%" src={social5} alt="Pengyi Labs website" />
+                <img className="img-fluid pr-3" width="60px" src={social5} alt="Pengyi Labs website" />
               </a>
               <a href="https://www.linkedin.com/company/pengyilabs/" rel="noopener noreferrer" target="_blank">
-                <img className="pr-3" width="5%" src={social2} alt="Linkedin Icon" />
+                <img className="img-fluid pr-3" width="60px" src={social2} alt="Linkedin Icon" />
               </a>
               <a href="https://twitter.com/labspengyi" rel="noopener noreferrer" target="_blank">
-                <img className="pr-3" width="5%" src={social1} alt="Twitter Icon" />
+                <img className="img-fluid pr-3" width="60px" src={social1} alt="Twitter Icon" />
               </a>
             </div>
         </Container>
