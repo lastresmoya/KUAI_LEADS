@@ -168,7 +168,7 @@ function App() {
             {
               isSend ?
                 <Alert color="primary">
-                  Gracias por su interes en KUAI un asesor de negocios se pondra en conntacto con usted pronto!
+                  Gracias por completar su pre-registro, estaremos en contacto con usted pronto!
                 </Alert>
               :''
             }
