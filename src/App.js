@@ -18,7 +18,8 @@ import {
   Form,
   FormGroup,
   Label,
-  Input
+  Input,
+  Alert
 } from 'reactstrap';
 import person from './Assets/person.png'
 import item1 from './Assets/item-1.png'
@@ -34,6 +35,7 @@ import emailjs from 'emailjs-com';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSend, setSend] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
   function sendEmail(e) {
@@ -43,7 +45,9 @@ function App() {
     emailjs.sendForm('smtp_server', 'template_SGdbvoTJ', e.target, 'user_rCm9lcAQApomtmIfRLsfn')
       .then((result) => {
           console.log(result.text);
-          window.location.reload(false);
+          setSend(true)
+          setTimeout(function(){ window.location.reload(false); }, 4000);
+
       }, (error) => {
           console.log(error.text);
       });
@@ -74,15 +78,15 @@ function App() {
           </Collapse>
         </Navbar>
         <Row>
-          <Col>
+          <Col sm="12" lg="6">
             <h1 className="text-left text-white font-weight-bold title pt-5 mt-5">KUAI es un sistema de pedidos online para servicios de comida</h1>
             <p className="text-left text-white font-weight-bold">en el cual podrás gestionarlos de manera flexible, según tus reglas, bajo tu control y de manera centralizada.</p>
             <div className="text-left">
               <a href="#registro" className="btn btn-primary text-white rounded-pill principal px-4 btn-lg" color="primary">Pre regístrate ahora</a>
             </div>
           </Col>
-          <Col>
-            <img src={person} alt="Vender comida por internet" />
+          <Col sm="12" lg="6">
+            <img className="img-fluid" src={person} alt="Vender comida por internet" />
           </Col>
         </Row>
       </Container>
@@ -161,6 +165,13 @@ function App() {
           <h3 className="text-left purple py-5 w-75">Pre-regístrate llenando el siguiente formulario y recibe beneficios adicionales durante el lanzamiento de KUAI:</h3>
           <Row>
             <Col>
+            {
+              isSend ?
+                <Alert color="primary">
+                  Gracias por su interes en KUAI un asesor de negocios se pondra en conntacto con usted pronto!
+                </Alert>
+              :''
+            }
               <Form onSubmit={sendEmail}>
                 <FormGroup>
                   <Label className="text-left d-block" for="inputName">Nombre</Label>
