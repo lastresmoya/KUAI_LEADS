@@ -12,16 +12,10 @@ import {
   Nav,
   NavItem,
   NavLink,
-  Button,
   Card,
   CardText,
   CardBody,
   CardTitle,
-  Form,
-  FormGroup,
-  Label,
-  Input,
-  Alert,
   NavbarText
 } from 'reactstrap';
 import person from './Assets/person.png'
@@ -34,28 +28,27 @@ import social3 from './Assets/social-3.png'
 import social4 from './Assets/social-4.png'
 import social5 from './Assets/social-5.png'
 import './App.css';
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
 
 function App() {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
-  const [isSend, setSend] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
-  function sendEmail(e) {
-    console.log(e)
-    e.preventDefault();
+  // function sendEmail(e) {
+  //   console.log(e)
+  //   e.preventDefault();
 
-    emailjs.sendForm('smtp_server', 'template_SGdbvoTJ', e.target, 'user_rCm9lcAQApomtmIfRLsfn')
-      .then((result) => {
-          console.log(result.text);
-          setSend(true)
-          setTimeout(function(){ window.location.reload(false); }, 4000);
+  //   emailjs.sendForm('smtp_server', 'template_SGdbvoTJ', e.target, 'user_rCm9lcAQApomtmIfRLsfn')
+  //     .then((result) => {
+  //         console.log(result.text);
+  //         setSend(true)
+  //         setTimeout(function(){ window.location.reload(false); }, 4000);
 
-      }, (error) => {
-          console.log(error.text);
-      });
-  }
+  //     }, (error) => {
+  //         console.log(error.text);
+  //     });
+  // }
 
   return (
     <div className="App">
