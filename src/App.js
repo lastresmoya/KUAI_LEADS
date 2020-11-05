@@ -76,7 +76,7 @@ function App() {
                 <NavLink className="text-white" href="#sistema-de-pedidos-online">{t("menuItem_system")}</NavLink>
               </NavItem>
               <NavItem className="mr-4">
-                <NavLink href="#registro" className="btn btn-primary principal text-white rounded-pill px-4" color="primary">{t("menuItem_register")}</NavLink>
+                <NavLink href="http://admin.kuai.menu/registry" className="btn btn-primary principal text-white rounded-pill px-4" color="primary">{t("menuItem_register")}</NavLink>
               </NavItem>
             </Nav>
             <NavbarText><LanguageSelect/></NavbarText>
@@ -87,7 +87,7 @@ function App() {
             <h1 className="text-left text-white font-weight-bold title pt-5 mt-5">{t("content_title")}</h1>
             <p className="text-left text-white font-weight-bold">{t("content_description")}</p>
             <div className="text-left">
-              <a href="#registro" className="btn btn-primary text-white rounded-pill principal px-4 btn-lg" color="primary">{t("input_submit")}</a>
+              <a href="http://admin.kuai.menu/registry" className="btn btn-primary text-white rounded-pill principal px-4 btn-lg" color="primary">{t("input_submit")}</a>
             </div>
           </Col>
           <Col sm="12" lg="6">
@@ -98,7 +98,7 @@ function App() {
       </header>
       <section id="vender-comida-por-internet" className="pb-5">
         <Container>
-          <h2 className="text-center purple py-5">Cómo vender comida por internet</h2>
+          <h2 className="text-center purple py-5">{t("content_benefits_title")}</h2>
           <Row>
             <Col sm="12" lg="4">
               <Card className="border-0">
@@ -167,10 +167,11 @@ function App() {
       </section>
       <section id="registro" className="pb-5">
         <Container>
-          <h3 className="text-left purple py-5 w-75">{t("form_title")}</h3>
           <Row>
             <Col>
-            {
+            <h3 className="text-center  purple pb-5">{t("form_title")}</h3>
+            <a href="http://admin.kuai.menu/registry" className="btn btn-primary text-white rounded-pill principal px-4 btn-lg" color="primary">{t("input_submit")}</a>
+            {/* {
               isSend ?
                 <Alert color="primary">
                   {t("alert")}
@@ -195,7 +196,7 @@ function App() {
                   <Input required type="email" name="email" id="inputEmail" placeholder={t("input_phone_email")} />
                 </FormGroup>
                 <Button type="submit" className="rounded-pill principal btn-lg px-4" color="primary">{t("input_submit")}</Button>
-              </Form>
+              </Form> */}
             </Col>
           </Row>
         </Container>
