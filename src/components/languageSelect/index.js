@@ -10,12 +10,12 @@ import ListItem from "@material-ui/core/ListItem";
 import ListSubheader from "@material-ui/core/ListSubheader";
 
 const languageMap = {
-  en: { label: "English", dir: "ltr", active: true },
-  es: { label: "Español", dir: "ltr", active: false }
+  en: { label: "English", dir: "ltr", active: false },
+  es: { label: "Español", dir: "ltr", active: true }
 };
 
 const LanguageSelect = () => {
-  const selected = localStorage.getItem("i18nextLng") || "en";
+  const selected = localStorage.getItem("i18nextLng") || "es";
   const { t } = useTranslation();
 
   const [menuAnchor, setMenuAnchor] = React.useState(null);
