@@ -173,7 +173,11 @@ function App() {
             {
               isSend ?
                 <Alert color="primary">
+<<<<<<< HEAD
                   {t("alert")}
+=======
+                  Gracias por completar su pre-registro, estaremos en contacto con usted pronto!
+>>>>>>> ec40e6c9f33b6f56689c0ffe8f8203bcc77142e9
                 </Alert>
               :''
             }
