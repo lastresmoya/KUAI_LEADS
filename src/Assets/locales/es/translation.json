@@ -1,0 +1,42 @@
+{
+  "select_language": "Seleciona el lenguaje",
+
+  "menuItem_home" : "Inicio",
+  "menuItem_benefits" : "Beneficios",
+  "menuItem_system" : "Nuestro Sistema",
+  "menuItem_register" : "Regístrate Ya",
+
+  "content_title" : "KUAI es un sistema centralizado de pedidos online",
+  "content_description" : "que hace énfasis en una gestión flexible, según las reglas y bajo el control de cada negocio.",
+  "content_title_alt" : "Venda sus productos en línea",
+
+  "content_benefits_alt_1" : "Sistema de pedidos por internet",
+  "content_benefits_alt_2" : "Codigo QR",
+  "content_benefits_alt_3" : "Gratis",
+
+  "content_benefits_title_1" : "Tu negocio bajo tu control",
+  "content_benefits_content_1" : "registra tu negocio, personaliza su perfil, gestione sus productos y los métodos de pago y entrega. Todo sin necesidad de ponerte en contacto con nosotros.",
+  "content_benefits_title_2" : "Obtenga un código QR",
+  "content_benefits_content_2" : "Automáticamente recibes un enlace y generamos un código QR únicos para que los uses por WhatsApp, Facebook, Instagram, impresión, etc. y dirigir a tus clientes a tu lista de productos para que hagan pedidos según tus reglas.",
+  "content_benefits_title_3" : "Tu lista de productos en línea gratis",
+  "content_benefits_contet_3" : "vender por internet no tiene que estar sujeto al uso de costosos sistemas de delivery, u otras plataformas nosotros te dejamos tener la lista de productos de tu negocio en nuestro sistema gratis.",
+
+  "content_cta_title" : "KUAI funciona como las aplicaciones para pedir comida",
+  "content_cta_content" : "pero sin necesidad de instalar una app en tu dispositivo! El sistema permite gestionar servicio exprés, entrega en mostrador, entrega en parqueo, servicio de habitación y servicio en restaurante, todos mediante un menú digital sin contacto desde celular, tablet ó computadora.",
+
+  "content_video_title": "Experimenta nuestro sistema para la gestión de tu negocio",
+  "content_video_content_client": "Tu negocio y sistema desde la perspectiva de un administrador",
+  "content_video_content_user": "Tu negocio y lista de productos digital para vender por internet desde la perspectiva de un cliente",
+
+  "form_title" : "Regístrate completando el formulario",
+  "input_name" : "Nombre",
+  "input_name_placeholder" : "Nombre Completo",
+  "input_restaurant" : "Restaurante",
+  "input_restaurant_placeholder" : "Nombre del Restaurannte",
+  "input_phone" : "Numero de Teléfono",
+  "input_phone_placeholder" : "Numero de Teléfono",
+  "input_email" : "Email",
+  "input_phone_email" : "Emial",
+  "input_submit" : "Regístrate ya",
+  "alert" : "Gracias por su interes en KUAI un asesor de negocios se pondra en conntacto con usted pronto!"
+}

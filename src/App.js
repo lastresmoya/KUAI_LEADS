@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import LanguageSelect from './components/languageSelect'
+import { useTranslation } from "react-i18next";
 import {
   Container,
   Row,
@@ -19,7 +21,8 @@ import {
   FormGroup,
   Label,
   Input,
-  Alert
+  Alert,
+  NavbarText
 } from 'reactstrap';
 import person from './Assets/person.png'
 import item1 from './Assets/item-1.png'
@@ -34,6 +37,7 @@ import './App.css';
 import emailjs from 'emailjs-com';
 
 function App() {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [isSend, setSend] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
@@ -63,30 +67,31 @@ function App() {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem className="mr-4">
-                <NavLink className="text-white" href="/">Inicio</NavLink>
+                <NavLink className="text-white" href="/">{t("menuItem_home")}</NavLink>
               </NavItem>
               <NavItem className="mr-4">
-                <NavLink className="text-white" href="#vender-comida-por-internet">Beneficios</NavLink>
+                <NavLink className="text-white" href="#vender-comida-por-internet">{t("menuItem_benefits")}</NavLink>
               </NavItem>
               <NavItem className="mr-4">
-                <NavLink className="text-white" href="#sistema-de-pedidos-online">Nuestro Sistema</NavLink>
+                <NavLink className="text-white" href="#sistema-de-pedidos-online">{t("menuItem_system")}</NavLink>
               </NavItem>
               <NavItem className="mr-4">
-                <NavLink href="#registro" className="btn btn-primary principal text-white rounded-pill px-4" color="primary">Pre registro</NavLink>
+                <NavLink href="#registro" className="btn btn-primary principal text-white rounded-pill px-4" color="primary">{t("menuItem_register")}</NavLink>
               </NavItem>
             </Nav>
+            <NavbarText><LanguageSelect/></NavbarText>
           </Collapse>
         </Navbar>
         <Row>
           <Col sm="12" lg="6">
-            <h1 className="text-left text-white font-weight-bold title pt-5 mt-5">KUAI es un sistema de pedidos online para servicios de comida</h1>
-            <p className="text-left text-white font-weight-bold">en el cual podrás gestionarlos de manera flexible, según tus reglas, bajo tu control y de manera centralizada.</p>
+            <h1 className="text-left text-white font-weight-bold title pt-5 mt-5">{t("content_title")}</h1>
+            <p className="text-left text-white font-weight-bold">{t("content_description")}</p>
             <div className="text-left">
-              <a href="#registro" className="btn btn-primary text-white rounded-pill principal px-4 btn-lg" color="primary">Pre regístrate ahora</a>
+              <a href="#registro" className="btn btn-primary text-white rounded-pill principal px-4 btn-lg" color="primary">{t("input_submit")}</a>
             </div>
           </Col>
           <Col sm="12" lg="6">
-            <img className="img-fluid" src={person} alt="Vender comida por internet" />
+            <img className="img-fluid" alt={t("content_title_alt")} src={person} />
           </Col>
         </Row>
       </Container>
@@ -97,33 +102,33 @@ function App() {
           <Row>
             <Col sm="12" lg="4">
               <Card className="border-0">
-                <img width="50%" className="mx-auto" src={item1} alt="Sistema de pedidos online" />
+                <img width="50%" className="mx-auto" alt={t("content_benefits_alt_1")} src={item1}  />
                 <CardBody>
-                  <CardTitle className="font-weight-bold purple">Tu negocio bajo tu control</CardTitle>
+                  <CardTitle className="font-weight-bold purple">{t("content_benefits_title_1")}</CardTitle>
                   <CardText className="text-secondary">
-                    registra tu restaurante, personaliza su perfil, gestiona su menú y los métodos de pago y entrega. Todo sin necesidad de ponerte en contacto con nosotros.
+                    {t("content_benefits_content_1")}
                   </CardText>
                 </CardBody>
               </Card>
             </Col>
             <Col sm="12" lg="4">
               <Card className="border-0">
-                <img width="50%" className="mx-auto" src={item2} alt="Genera un codigo QR" />
+                <img width="50%" className="mx-auto" alt={t("content_benefits_alt_2")} src={item2}  />
                 <CardBody>
-                  <CardTitle className="font-weight-bold purple">Obtén un enlace y genera un código QR únicos</CardTitle>
+                  <CardTitle className="font-weight-bold purple">{t("content_benefits_title_2")}</CardTitle>
                   <CardText className="text-secondary">
-                    para que los uses por WhatsApp, Facebook, Instagram y etc. para dirigir a tus clientes a tu menú digital y que hagan pedidos según tus reglas.
+                    {t("content_benefits_content_2")}
                   </CardText>
                 </CardBody>
               </Card>
             </Col>
             <Col sm="12" lg="4">
               <Card className="border-0">
-                <img width="50%" className="mx-auto" src={item3} alt="Prueba gratis por un mes" />
+                <img width="50%" className="mx-auto" src={item3} alt={t("content_benefits_alt_3")} />
                 <CardBody>
-                  <CardTitle className="font-weight-bold purple pt-3">Prueba gratis KUAI por un mes</CardTitle>
+                  <CardTitle className="font-weight-bold purple pt-3">{t("content_benefits_title_3")}</CardTitle>
                   <CardText className="text-secondary">
-                    vender comida por internet no tiene que estar sujeto al uso de costosos sistemas de delivery, nosotros te dejamos probar nuestro sistema gratis durante 30 días.
+                    {t("content_benefits_contet_3")}
                   </CardText>
                 </CardBody>
               </Card>
@@ -135,61 +140,61 @@ function App() {
         <Container>
           <Row>
             <Col>
-              <h1 className="text-center purple">KUAI funciona como las aplicaciones para pedir comida</h1>
-              <p className="text-center purple">pero sin necesidad de instalar una app en tu dispositivo! El sistema permite gestionar entrega en mostrador, entrega en parqueo, servicio de habitación y servicio en restaurante, todos mediante un menú digital sin contacto desde celular, tablet ó computadora.</p>
+              <h2 className="text-center h1 purple">{t("content_cta_title")}</h2>
+              <p className="text-center purple">{t("content_cta_content")}</p>
             </Col>
           </Row>
         </Container>
       </section>
       <section className="pb-5">
         <Container>
-          <h2 className="text-center purple py-5">Experimenta nuestro sistema para la gestión de tu negocio</h2>
+          <h2 className="text-center purple py-5">{t("content_video_title")}</h2>
           <Row>
             <Col sm="12" lg="6">
               <div className="iframe-container">
                 <iframe title="KUAI Como lo experimenta un administrador" className="responsive-iframe" src="https://www.youtube.com/embed/muTv3PBoLQQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <p className="purple pt-4">Tu restaurante y sistema de gestión desde la perspectiva de un administrador</p>
+              <p className="purple pt-4">{t("content_video_content_client")}</p>
             </Col>
             <Col sm="12" lg="6">
               <div className="iframe-container">
                 <iframe title="KUAI Como lo experimenta un cliente" className="responsive-iframe" src="https://www.youtube.com/embed/yC-EoCZqPUA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <p className="purple pt-4">Tu restaurante y menú digital para vender comida por internet desde la perspectiva de un cliente</p>
+              <p className="purple pt-4">{t("content_video_content_user")}</p>
             </Col>
           </Row>
         </Container>
       </section>
       <section id="registro" className="pb-5">
         <Container>
-          <h3 className="text-left purple py-5 w-75">Pre-regístrate llenando el siguiente formulario y recibe beneficios adicionales durante el lanzamiento de KUAI:</h3>
+          <h3 className="text-left purple py-5 w-75">{t("form_title")}</h3>
           <Row>
             <Col>
             {
               isSend ?
                 <Alert color="primary">
-                  Gracias por su interes en KUAI un asesor de negocios se pondra en conntacto con usted pronto!
+                  {t("alert")}
                 </Alert>
               :''
             }
               <Form onSubmit={sendEmail}>
                 <FormGroup>
-                  <Label className="text-left d-block" for="inputName">Nombre</Label>
-                  <Input required type="text" name="name" id="inputName" placeholder="Nombre completo" />
+                  <Label className="text-left d-block" for="inputName">{t("input_name")}</Label>
+                  <Input required type="text" name="name" id="inputName" placeholder={t("input_name_placeholder")} />
                 </FormGroup>
                 <FormGroup>
-                  <Label className="text-left d-block" for="inputRestaurant">Restaurante</Label>
-                  <Input required type="text" name="restaurant" id="inputRestaurant" placeholder="Nombre del Restaurante" />
+                  <Label className="text-left d-block" for="inputRestaurant">{t("input_restaurant")}</Label>
+                  <Input required type="text" name="restaurant" id="inputRestaurant" placeholder={t("input_restaurant_placeholder")} />
                 </FormGroup>
                 <FormGroup>
-                  <Label className="text-left d-block" for="inputPhone">Numero de Teléfono</Label>
-                  <Input required type="phone" name="phone" id="inputPhone" placeholder="Numero de Teléfono" />
+                  <Label className="text-left d-block" for="inputPhone">{t("input_phone")}</Label>
+                  <Input required type="phone" name="phone" id="inputPhone" placeholder={t("input_phone_placeholder")} />
                 </FormGroup>
                 <FormGroup>
-                  <Label className="text-left d-block" for="inputEmail">Email</Label>
-                  <Input required type="email" name="email" id="inputEmail" placeholder="Email" />
+                  <Label className="text-left d-block" for="inputEmail">{t("input_email")}</Label>
+                  <Input required type="email" name="email" id="inputEmail" placeholder={t("input_phone_email")} />
                 </FormGroup>
-                <Button type="submit" className="rounded-pill principal btn-lg px-4" color="primary">Enviar</Button>
+                <Button type="submit" className="rounded-pill principal btn-lg px-4" color="primary">{t("input_submit")}</Button>
               </Form>
             </Col>
           </Row>
